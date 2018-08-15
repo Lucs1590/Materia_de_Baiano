@@ -1,4 +1,4 @@
-# Bem vinda a Materia de Baiano!
+# Bem vindo a Materia de Baiano!
 **Desenvolvido por**: Lucas de Brito Silva
 
 Esse repositório tem a finalidade de armazenar e compartilhar todos os projetos relacionados à matéria de redes desenvolvidos por Lucas de Brito Silva (no caso, eu mesmo), para contribuir para a aula de redes ministrada pelo professor Éttore Leandro. 
