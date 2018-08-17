@@ -17,9 +17,9 @@ while msg != '\x18':
     tcp.send (msg.encode())
     print('enviado!')
     time.sleep(3)
-    # msg = con.recv(1024)
+    msg = tcp.recv(1024)
     print('verificado!')
-    # if not msg: break
-    # print(msg)
+    if not msg: break
+    print(msg)
     msg = input()
 tcp.close()

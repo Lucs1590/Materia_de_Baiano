@@ -7,6 +7,8 @@ def conexao(con,cli):
         msg = con.recv(1024)
         if not msg: break
         print (msg)
+        con.send(msg)
+        print ('enviado para destino:', msg)
     print ('Finalizando conexao do cliente', cli)
     con.close() 
 
@@ -18,6 +20,7 @@ tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 orig = (HOST, PORT)
 tcp.bind(orig)
 tcp.listen(1)
+# tcp.connect(orig)
 while True:
     con, cliente = tcp.accept()
     print ('Concetado por ', cliente)
