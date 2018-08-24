@@ -1,7 +1,3 @@
-function entrada(params) {
-    
-}
-
 function positionBit(entrada) {
     //Valor que vai sair
     var saida = [];
@@ -18,6 +14,17 @@ function positionBit(entrada) {
     return(saida);
 }
 
+
+function preencherParidade(entrada,prim_par) {
+    // recebe o um valor e retorna uma lista com as posiçoes
+    // posição_ent = atual + prim_par + 1
+    primeiro = parseInt(prim_par)
+    atual = entrada[(primeiro+1)]  //transformar em array
+    console.log(atual)
+    posicao = (atual + primeiro + 1)
+}
+
+
 function criacaoParidade(entrada) {
     func = positionBit(entrada);
     console.log(func)
@@ -29,19 +36,14 @@ function criacaoParidade(entrada) {
         var paridade = func[index];
     
         dic[paridade] = [];
-
-        Object.entries(dic).forEach((keyValue) => {
-              //keyValue[0];
-                
-        })
     }
 }
 
 
 
 // positionBit('1111011');
-// criacaoParidade('1111011')
-
+//criacaoParidade('1111011')
+preencherParidade('1111011','1')
 
 // X = IMPAR    0 = PAR
 // p1 - 1 1 0 1     X
