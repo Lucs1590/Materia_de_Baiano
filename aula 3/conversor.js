@@ -51,6 +51,7 @@ function criacaoParidade(entrada) {
     return (dic);
 }
 
+
 function correcaoBits(entrada) {
     entrada = Array.from(entrada);
     dic = criacaoParidade(entrada);
@@ -64,13 +65,15 @@ function correcaoBits(entrada) {
     console.log(dic)
 
     somaParidade = 0;
-
+    
+    // Para cada valor(value), se o valor for falso, então soma-se à variavel somaParidade ela mesma mais o valor da key. 
     Object.entries(dic).forEach((valorEspecifico) => {
         if (valorEspecifico[1] == false) {
             somaParidade += parseInt(valorEspecifico[0]);
         }
     });
 
+    // Faz o condicional, de que se o valor da entrada for igual a 1 ele recebe 0, se não ele recebe 1
     entrada[somaParidade] = entrada[somaParidade] == '1' ? '0' : '1';
 
 	return entrada.join('');
@@ -82,9 +85,14 @@ function correcaoBits(entrada) {
 resultado = correcaoBits('1111011')
 
 console.log('O correto seria:', resultado)
-// X = IMPAR    0 = PAR
-// p1 - 1 1 0 1     X
-// p2 - 1 1 1 1     0
-// p3 - 1 0 1 1     X
 
-// 5ª posição
+/*
+EXEMPLO:
+X = IMPAR    0 = PAR
+
+p1 - 1 1 0 1     X
+p2 - 1 1 1 1     0
+p3 - 1 0 1 1     X
+
+5ª posição corrompida!
+*/
