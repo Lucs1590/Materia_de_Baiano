@@ -8,3 +8,6 @@ Para esse exemplo funcionar é necessário o uso do NodeJS.
 Primeiramente abra um prompt de comando e execute o código.
 ```
 node conversor.js
+```
+## Agradecimentos
+Agradeço ao [Ricardo Heiji] (wwww.github.com/heij) pela contribuição e incentivo a trabalhar com o JavaScript para esse projeto.
