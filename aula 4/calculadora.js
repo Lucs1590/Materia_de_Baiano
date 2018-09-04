@@ -115,31 +115,81 @@ function quantSubRedes(padraoMask, padraoDesejado) {
 function mesmaRede(ip1,ip2) {
     ip1Bin = transformarBinIP(ip1);
     ip2Bin = transformarBinIP(ip2);
+    IP1 = separarIP(ip1);
+    IP2 = separarIP(ip2);
 
     classeIP1 = classeHost(IP1[0]);
     classeIP2 = classeHost(IP2[0]);
     
     subclasse1 = subClasseBin(classeIP1);
     subclasse2 = subClasseBin(classeIP2);
-    resultado1 = [];
-    resultado2 = [];
 
-    for (let cont = 0; cont <= ip1Bin.length; cont++) {
-        let blocoIP = ip1Bin[cont];
-        let blocoSub = subclasse[cont]
-        console.log(blocoIP)
-        console.log(blocoSub)
-        // adicionar Zeros a frente de onde só tem 1 caracter
-        // comparar com forEach e adcicionar a lista resultado
-        // repitir o processo para o segundo valor
-        // coparar os dois resultados (se iguais, então estão na mesma rede, se não não)
-    }
+    r1 = EParaIP(ip1Bin,subclasse1).toString();
+    r2 = EParaIP(ip2Bin,subclasse2).toString();
+
+    console.log("IP 1: ",r1);
+    console.log("IP 2: ",r2);
+
+    if (r1 === r2) {
+        console.log("Ambos estão na mesma rede");
+    } else {
+        console.log("Ambos estão em redes diferentes");
+    };
+};
+
+
+function reverseString(str) {
+    return str.split("").reverse().join("");
+};
+
+
+function adicionaZero(bloco) {
+    for (let contNum = bloco.length; bloco.length < 8; contNum++) {
+        bloco = bloco.concat("0");
+    };
+    return(reverseString(bloco));
+};
+
+
+function EParaIP(IP_Bin, subclasse) {
+    cont = 0;
+    resultBloco = [];
+    while (cont < 4) {
+        let blocoIP = adicionaZero(IP_Bin[cont]);
+        let blocoSub = adicionaZero(subclasse[cont]);
+        
+        resultado = "";
+
+        for (let index = 0; index < blocoIP.length; index++) {
+            const numerosIP = blocoIP[index];
+            const numerosMask = blocoSub[index];
+
+            if (numerosIP.indexOf("1") == 0) {
+                if (numerosMask.indexOf("1") == 0) {
+                    resultado += "1";
+                } else {
+                    resultado += "0";
+                };
+            } else if (numerosMask.indexOf("1") == 0) {
+                if (numerosIP.indexOf("1") == 0) {
+                    resultado += "1";
+                } else {
+                    resultado += "0";
+                };
+            } else {
+            resultado += "0";
+            };
+        };
+        resultBloco.push(reverseString(resultado));
+        cont++;
+    };
+    return(resultBloco);
 };
 
 
 function main(ip) {
     padraoDesejado = 18;
-    segundoIP = '192.168.0.9';
+    segundoIP = '192.168.0.250';
 
     parteSeparada = separarIP(ip);
     // console.log(parteSeparada[0]);
@@ -163,9 +213,8 @@ function main(ip) {
     // console.log(subclasse);
 
     redeIgual = mesmaRede(ip, segundoIP);
-    console.log(redeIgual);
+    // console.log(redeIgual);
 
 }
-
 
 main('192.168.0.1');
