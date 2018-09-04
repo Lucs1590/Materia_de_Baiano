@@ -144,10 +144,8 @@ function reverseString(str) {
 
 
 function adicionaZero(bloco) {
-    for (let contNum = bloco.length; bloco.length < 8; contNum++) {
-        bloco = bloco.concat("0");
-    };
-    return(reverseString(bloco));
+    bloco = bloco.padStart(8, 0);
+    return(bloco);
 };
 
 
@@ -189,7 +187,7 @@ function EParaIP(IP_Bin, subclasse) {
 
 function main(ip) {
     padraoDesejado = 18;
-    segundoIP = '192.168.0.250';
+    segundoIP = '172.17.0.1';
 
     parteSeparada = separarIP(ip);
     // console.log(parteSeparada[0]);
