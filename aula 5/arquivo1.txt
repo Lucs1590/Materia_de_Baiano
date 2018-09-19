@@ -1,0 +1,4 @@
+Esse arquivo foi criado com o intuito de servir para leitura.
+Linha um;
+Linha dois;
+Linha três.
