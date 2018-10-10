@@ -9,4 +9,5 @@ Esse repositório tem a finalidade de armazenar e compartilhar todos os projetos
  2. [**Aula 2**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%202) - Aula relacionada a criação de servidor mirror utilizando **udp** e **tcp**;
  3. [**Aula 3**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%203) - Aula relacionada a criação de um arquivo que verifica qual é o bit "corrompido";
  4. [**Aula 4**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%204) - Aula relacionada com a criação de uma calculadora de IPs;
- 5. [**Aula 5**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%205) - Aula relacionada a criptografia com o uso de **Hash** e **RSA**.
+ 5. [**Aula 5**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%205) - Aula relacionada a criptografia com o uso de **Hash** e **RSA**;
+ 6. [**Aula 6**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%206) - Aula relacionada a certificado com o uso de **nginx** e **apache**;
