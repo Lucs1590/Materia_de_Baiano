@@ -3,3 +3,7 @@ venv:
 
 test:
 	PYTHONPATH=src/ python -m unittest discover test/
+
+coverage:
+	coverage run --source src/ -m unittest discover test/
+	coverage html
