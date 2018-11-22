@@ -22,6 +22,7 @@
     "@angular/router": "~7.0.0",
     "@types/paho-mqtt": "^1.0.3",
     "core-js": "^2.5.4",
+    "growl": "^1.10.5",
     "paho-client": "^1.0.1",
     "paho-mqtt": "^1.0.4",
     "rxjs": "^6.3.3",

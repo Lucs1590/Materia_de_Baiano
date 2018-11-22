@@ -12,7 +12,7 @@ declare const Paho: any;
 export class AppComponent {
   public client: Client;
   public text: string;
-  public selectedRoomName : string = null;
+  public selectedRoomName: string = null;
 
   messages = {};
 
@@ -29,7 +29,8 @@ export class AppComponent {
       room.push(message.payloadString);
       this.messages[roomName] = room;
       this.activeRooms[message.destinationName] = new Date();
-    }
+    };
+
     this.client.connect({
       onSuccess: () => {
         this.client.subscribe('fatec/chat/+')
@@ -38,7 +39,7 @@ export class AppComponent {
   }
   title = 'mqttAngular';
 
-  sendMsg(){
+  sendMsg() {
     const message = new Paho.MQTT.Message(this.text);
     console.log(message);
     message.destinationName = this.selectedRoomName;
@@ -46,6 +47,6 @@ export class AppComponent {
   }
 
   getActiveRooms() {
-    return Object.keys(this.activeRooms)
+    return Object.keys(this.activeRooms);
   }
 }
