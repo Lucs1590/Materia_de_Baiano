@@ -18,3 +18,4 @@ Esse repositório tem a finalidade de armazenar e compartilhar todos os projetos
  8. [**Aula 8**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%208) - Aula relacionada a experiencia com **DNS** e **DHCP**.
  9. [**Aula 9**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%209) - Aula relacionada a um sever **UDP** com o uso de broadcast e multicast.
  10. [**Aula 10**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%2010) - Aula relacionada a um chat usando o protocolo **MQTT**.
+ 11. [**Aula 11**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%2011) - Aula relacionada a uma Experiencia de **DevOps**.
