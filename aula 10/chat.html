@@ -67,10 +67,11 @@
 
         function onSalaArrived(sala) {
             if (salasAtivas[sala] == true) {
+                return
             }
             salasAtivas[sala] = true;
 
-            console.log(salasAtivas[sala]);
+            console.log("Salas ativas: " + salasAtivas[sala]);
             var node = document.createElement('li');
             var textNode = document.createTextNode(sala);
             node.appendChild(textNode);
