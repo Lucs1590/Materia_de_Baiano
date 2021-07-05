@@ -20,4 +20,4 @@ Esse repositório tem a finalidade de armazenar e compartilhar todos os projetos
  10. [**Aula 10**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%2010) - Aula relacionada a um chat usando o protocolo **MQTT**.
  11. [**Aula 11**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%2011) - Aula relacionada a uma Experiencia de **DevOps**.
 
-OBS.: Esse repositório está arquivado, sendo assim, será utilizado apenas para consultas.
+**OBS.: Esse repositório está arquivado, sendo assim, será utilizado apenas para consultas.**
