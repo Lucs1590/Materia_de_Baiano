@@ -1,7 +1,7 @@
 # Bem vindo a Materia de Baiano!
 **Desenvolvido por**: Lucas de Brito Silva
 
-Esse repositório tem a finalidade de armazenar e compartilhar todos os projetos relacionados à matéria de redes desenvolvidos por Lucas de Brito Silva (no caso, eu mesmo), para contribuir para a aula de redes ministrada pelo professor Éttore Leandro. 
+Esse repositório tem a finalidade de armazenar e compartilhar todos os projetos relacionados à matéria de redes desenvolvidos por Lucas de Brito Silva (no caso, eu mesmo), para contribuir para a aula de redes ministrada pelo professor [Éttore Leandro](https://github.com/ettoreleandrotognoli).
 
 # Índice
 
@@ -19,3 +19,5 @@ Esse repositório tem a finalidade de armazenar e compartilhar todos os projetos
  9. [**Aula 9**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%209) - Aula relacionada a um sever **UDP** com o uso de broadcast e multicast.
  10. [**Aula 10**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%2010) - Aula relacionada a um chat usando o protocolo **MQTT**.
  11. [**Aula 11**](https://github.com/Lucs1590/Materia_de_Baiano/tree/master/aula%2011) - Aula relacionada a uma Experiencia de **DevOps**.
+
+OBS.: Esse repositório está arquivado, sendo assim, será utilizado apenas para consultas.
